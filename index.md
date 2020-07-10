@@ -27,7 +27,7 @@ Analyzed current Airbnb daily listing prices in San Francisco to predict prices 
 <img src="https://github.com/sherryduong93/Anime_Recommender/raw/master/images/flask_welcome.png"/>
 Created an Anime Recommender system using MyAnimeList's dataset of animes released prior to 2018. Recommender utilizes popularity-based, content-based similarity between anime (calculated with cosine similarity), and matrix factorization collaborative filtering techniques with Spark's ALS model.
 
-[Check out the Web App!](https://animerecz.herokuapp.com/)
+[Check out the Web App!](https://animerecz.herokuapp.com/) (It takes a second to load)
 
 [Github Repo](https://github.com/sherryduong93/Anime_Recommender) | [PPT](pdf/Anime_pdf.pdf)     |   [Video Presentation](https://www.youtube.com/watch?v=XqmXutqqiNI&feature=youtu.be)     
 

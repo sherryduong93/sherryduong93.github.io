@@ -5,7 +5,7 @@
     * [What Else Did The Chase Stadium Bring to SF?](#what-else-did-the-chase-stadium-bring-to-sf)
     * [How Are Airbnb Prices Determined?](#how-are-airbnb-prices-determined)
     * [Your Anime Match Maker: An Anime Recommeder System](#your-anime-match-maker-an-anime-recommender-system)
-* [Contact Me](#Contact-information)
+* [Contact Me](#contact-information)
 ---
 
 ## Projects
@@ -41,7 +41,7 @@ Created an Anime Recommender system using MyAnimeList's dataset of animes releas
 ## Contact Information
 **Email:** sherryduong@gmail.com
 <br>**LinkedIn:** sherry-duong
-<br>**Github:** sherryduong93**
+<br>**Github:** sherryduong93
 
 
 

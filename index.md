@@ -6,7 +6,7 @@
 
 [Project 1 Title](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
-<object data="https://github.com/sherryduong93/chasestadiumimpact/blob/master/Chase_Center_Presentation.pdf" type="application/pdf" width="0%"> 
+<object data="pdf/Presentation_PPT.pdf" type="application/pdf" width="0%"> 
 </object>
 
 ---

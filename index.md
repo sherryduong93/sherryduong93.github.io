@@ -6,6 +6,7 @@
     * [How Are Airbnb Prices Determined?](#how-are-airbnb-prices-determined)
     * [Your Anime Match Maker: An Anime Recommeder System](#your-anime-match-maker-an-anime-recommender-system)
 * [Contact Me](#contact-information)
+
 ---
 
 ## Projects

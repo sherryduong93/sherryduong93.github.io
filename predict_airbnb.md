@@ -23,27 +23,34 @@ My goal is this project is to predict daily airbnb listing prices, to get a bett
 <br>-Converted columns related to currency (price, extra_people, security_deposit and cleaning_fee] from string to float, removed '$'</pre>
 ## EDA Feature Importances
 ### Overview of the Data from 2015-2020
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/Daily_rate_over_time.png)
+
+![image](Graphs/Daily_rate_over_time.png)
 <br>-There is clear seasonality between months. Spike in Airbnb Rentals in 2017 were strongly linked to rent increases in some of the largest US metro areas.
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/Distribution_Daily_Prices.png)
+
+![image](Graphs/Distribution_Daily_Prices.png)
 <br>-Distribution of the daily listings do not follow a normal distribution, so we will take the log and remove the outliers
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/Log_DailyRates.png)
+
+![image](Graphs/Log_DailyRates.png)
 <br>-Now that the dependent variable follows a normal distribution, this will likely help with our predictions.
 ### Numeric Features: 
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/numeric_corr.png)
+
+![image](Graphs/numeric_corr.png)
 <br>-Most important features (based on Correlation plot with correlation over 1%): Accommodates, bathrooms, bedrooms, beds, cleaning_fee, security_deposit, review_scores_rating, review_scores_cleanliness, review_scores_location,   review_scores_accuracy, review_scores_communication, review_scores_checkin, review_scores_value, extra_people, month, year, number_of_reviews
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/price_vs_accom.png)
+
+![image](Graphs/price_vs_accom.png)
 -There is a trend, the more rooms/accomodations available will increase the listing price until a certain threshold, where it appears it no longer matters and does not affect price. Likely due to the fact that places with that much space have difficulties filling.
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/reviews_scatter.png)
+![image](Graphs/reviews_scatter.png)
 -Review data also shows a positive trend relating to price.
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/cleaning_fee.png)
+![image](Graphs/cleaning_fee.png)
 -For data related to fee, there is a slight positive trend, but with a lot of noise. May be worth it to look into a conversion of this column from numeric to binary classification
 ### Categorical Features
 <br>-Features that seem to have an impact: neighbourhood_cleansed, property_type, room_type
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/neighborhood_dist.png)
+
+![image](Graphs/neighborhood_dist.png)
 <br> Some neighborhoods have clear price differences than others. Sea-side neighborhoods tend to have higher prices (IE: Presidio or Marina)
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/propertytype_dist.png)
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/roomtype_dist.png)
+
+![image](Graphs/propertytype_dist.png)
+![image](Graphs/roomtype_dist.png)
 <br>-For host related features: I hypothesized that the host response rate, response time, and senority would provide some insight, but for the most part there were not any significant trends.
 <br>-Same for Cancellation Policy and Instant Booking, graphs for which are in the Jupyter notebook for more information.
 
@@ -66,7 +73,8 @@ My goal is this project is to predict daily airbnb listing prices, to get a bett
 <br>-Gradient Boosting Regressor: Cross-Val R2: 0.65, RMSE: 152.38
 <br>**Will proceed with Random Forest Estimator for future iterations.**
 <br><br>**Feature Importance from Baseline Model**
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/Feature_imp_BaseModel_RF.png)
+
+![image](Graphs/Feature_imp_BaseModel_RF.png)
 <br>-Most important feature: Number of Bedrooms
 <br>-Second: Whether or not the Airbnb was access to an entire home/apartment, with the 8th most important feature capturing whether or not the Airbnb was a shared room or not. Seems to highlight that travellers have a preference on privacy.
 <br>-Fees also seem to be important, with all 3 fee categories in the top 20
@@ -83,7 +91,8 @@ My goal is this project is to predict daily airbnb listing prices, to get a bett
 <br>-Currently the "Amenities" columns is a set of amenities, stored as text. I will count the number of items stored in the set, with each item reflecting an amenity provided by the property.
 <br>-Cross-Validation R2 for Random Forest: Increased to 0.90, RMSE: 71.56
 <br>-The num_amenities feature also became the 3rd most important feature in the feature_importance plot.
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/num_amenities_imp.png)
+
+![image](Graphs/num_amenities_imp.png)
 <br>-Next Step: Continue with this feature for future implementation
 <br><br>**Categorical Feature for Accomodations/beds/bedrooms/bathrooms**
 <br>-Once the number reaches a certain threshold for the accomodation columns, there is an apparent diminishing return.
@@ -92,8 +101,9 @@ My goal is this project is to predict daily airbnb listing prices, to get a bett
 <br>-Next Step: Not much of an improvement to keep the feature. Remove to reduce model complexity.
 <br><br>**Neighborhoods**
 <br>After converting the price density into a heatmap on top of San Francisco, it is apparent that the highest listing prices are concentrated in the center of San Francisco.
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/all_listings_sf.png)
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/scatter_heatmap_neighborhoods.png)
+
+![image](Graphs/all_listings_sf.png)
+![image](Graphs/scatter_heatmap_neighborhoods.png)
 <br>From this insight, I created a new feature to capture whether or not the listing was in the city center, which I determined as 1 if neighborhood within list: ("Western Addition", "South Of Market", "Downtown/Civic Center", "Financial District"), and 0 if not.
 <br>-Cross-Validation R2 for Random Forest: Dropped to 0.87
 <br>-Next Step: Do not proceed with this feature
@@ -107,11 +117,13 @@ My goal is this project is to predict daily airbnb listing prices, to get a bett
 <br>-Next Step: Do not proceed with this feature
 <br><br>**Length of Listing Name, Summary, Description, and Space**
 <br>Created features to identity the length (in characters) of the listing name, space, summary, and description. From the below plot, it appears there could be a positive relationship between the length of the listing name, and the listing price.
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/Len_of_Listing_Name.png)
+
+![image](Graphs/Len_of_Listing_Name.png)
 <br>-Added this feature into the current best performing model
 <br>-Cross-Validation R2 for Random Forest: Increased to 0.93, RMSE: 61.29
 <br>-Length of summary & name became 2 of the top 10 features
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/Length_text_feat_imp.png)
+
+![image](Graphs/Length_text_feat_imp.png)
 <br>-Next Step: Continue with this new feature
 <br><br>**Natural Language Processing**
 <br>Vectorizing & Clustering "Summary", top clusters:
@@ -129,7 +141,7 @@ My goal is this project is to predict daily airbnb listing prices, to get a bett
 <br>-Next Step: Do not proceed with these features
 
 ## Model Tuning
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/Metrics_over_iterations.png)
+![image](Graphs/Metrics_over_iterations.png)
 <br>Across all feature engineering attemps, there is some slight overfitting.
 <br>**Eliminate all room_type features except Entire House/Apartment& Shared room.**
 <br>-Cross-Validation R2 for Random Forest: No change, 0.93, RMSE: 61.83
@@ -146,7 +158,8 @@ My goal is this project is to predict daily airbnb listing prices, to get a bett
 
 ## Results & Conclusion: 
 <br>Total Final Features: 73 (22 Main Features + Dummies)
-![image](https://github.com/sherryduong93/Predict_AirBnB_Listings/blob/working/Graphs/Final_model_feat_imp.png)
+
+![image](Graphs/Final_model_feat_imp.png)
 <br>The test set performed the same as the cross-validation performance.
 <br>R2 on Unseen Test Data: 0.94
 <br>Adjusted R2: 0.93

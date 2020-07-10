@@ -23,11 +23,14 @@ Because of this, I was curious to see if this surge of sports fans had an impact
 <br>Call Types of interest: 'Train / Rail Incident', 'Odor (Strange / Unknown)', 'Explosion','Traffic Collision','Alarms', 'Structure Fire', 'Other', 'Medical Incident’</pre>
 <br>**Interesting Finds**
 In general, the calls to the Fire Department have been increasing year over year, even when normalizing for population growth.
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Fire_Calls_2000-2020.png)
+
+![image](Graphs/Fire_Calls_2000-2020.png)
 There is also some seasonality of the data, with peaks at the beginning of each season and lows mid-season. 
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/FireCalls2015-2020.png)
+
+![image](Graphs/FireCalls2015-2020.png)
 However, when looking into 2020, the call volume seems to have dropped, but this is also due to the fact that it is the "low" part of the seasonal volume, and we would expect to see an uptick in April based on current trend. Because of this, I will proceed with hypothesis testing only comparing dates after the stadium opened.
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/FireCallsinmbdp2019-2020.png)
+
+![image](Graphs/FireCallsinmbdp2019-2020.png)
 
 
 ### Dataset 2: Police Incidents
@@ -42,11 +45,13 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 <pre>Calculated the harversine distance between the latitude/longitude of all rows in data and the known latitude/longitude of all zipcodes in SF. Was able to estimate the zipcode in order to narrow down to the same zipcodes used for the Fire Department Analysis.</pre>
 <br>**General EDA on Police Incidents as a whole**
 <br>In general, crime experienced a steep decline up until 2011, where it has gradually increased and is relatively flat since 2013 and actually decreasing since the Chase Stadium Opened. Similar seasonality seen with Fire Department Calls, though it general with normalizing it looks like crime went down.
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Total_Police_Calls_2003-2020.png)
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Incidents2003-2019.png)
+
+![image](Graphs/Total_Police_Calls_2003-2020.png)
+![image](Graphs/Incidents2003-2019.png)
 <br>**Dogpatch/Mission Bay Data from before and after Stadium opening**
 <br>Similar to the Fire Service Call Data, when looking into 2020, the volume seems to have dropped, but unlike the Fire Service Call data, there is not an obvious uptick in the winter, and instead is a gradual dropping of crime.
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policeincidentmbdp2019-2020.png)
+
+![image](Graphs/policeincidentmbdp2019-2020.png)
 
 
 
@@ -63,12 +68,14 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 <br> **Alternative Hypothesis:** Fire Department Calls & Police Incidents during event dates > non-event dates
 <br>**Alpha:** 0.05
 <br> Methodology: Conducted MannWhitneyU Test and T-Test on both sample populations (#Calls/Incidents on Event Dates vs. #Calls/Incidents not on event dates), due to different sample sizes & standard deviations.
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/firecallsdistribution.png)
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policeincidentdistribution.png)
+
+![image](Graphs/firecallsdistribution.png)
+![image](Graphs/policeincidentdistribution.png)
 <br><br>Distribution of Fire Service Calls & Police Incidents were roughly normally distributed, but indicated some outliers.
 Below are the distributions prior to removing the outliers. 2 extreme outliers on 12/21/2019 & 1/11/2020 were removed from the datasets before additional analysis.
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonScatter_Police.png)
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonBox_fire.png)
+
+![image](Graphs/EventsVsNonScatter_Police.png)
+![image](Graphs/EventsVsNonBox_fire.png)
 <br><br>
 ### Results: Fire Department Calls
 **Number of Event Dates: 75, Number of Non-Event Dates: 134
@@ -76,7 +83,8 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 <br>-MannWhitneyU Test Result : pvalue = 0.069 -> Not-Significant
 <br>-T-Test Statistic & Distribution: pvalue = 0.044 -> Significant 
 <br>**Based on the T-Test, we can conclude that Event Dates have a higher number of daily Fire Department Service Calls than Non-Event Dates.**
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_Fire.png)
+
+![image](Graphs/EventsVsNonHypotheisTest_Fire.png)
 <br><br>
 ### Results: Police Incidents
 **Number of Event Dates: 75, Number of Non-Event Dates: 138
@@ -84,7 +92,8 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 <br>-MannWhitneyU Test Result : pvalue = 0.0262 -> Significant
 <br>-T-Test Statistic & Distribution: pvalue = 0.0096 -> Significant
 <br>**Based on the T-Test, we can conclude that Event Dates have a higher number of daily Police Incidents than Non-Event Dates.**
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_Police.png)
+
+![image](Graphs/EventsVsNonHypotheisTest_Police.png)
 <br> 
 ### What about effects of Shelter In Place?
 **The data was captured from 9/6/2019 - 3/31/2020. Major Tech companies started having employees work from home around early March, and official Shelter In Place measures were enacted 3/19/2020. How did that impact calls/incidents?**
@@ -93,12 +102,13 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 <br>-T-Test Statistic & Distribution (Fire Service) : pvalue = 0.11 -> Not Significant 
 <br>-T-Test Statistic & Distribution (Police Incidents) : pvalue = 0.11 -> Not Significant 
 <br>**Based on the results of all hypothesis tests after accounting for Shelter In Place, we can conclude that there is not a significant difference in the daily Fire Department Service Call volume or Police Incidents between Event & Non-event dates.**
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_FireWOSIP.png)
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_PoliceWOSIP.png)
+
+![image](Graphs/EventsVsNonHypotheisTest_FireWOSIP.png)
+![image](Graphs/EventsVsNonHypotheisTest_PoliceWOSIP.png)
 
 ## Bonus: Basketball, or Concerts - Which causes more trouble?
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/firecallsbballconcertdist.png)
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policesbballconcertdist.png)
+![image](Graphs/firecallsbballconcertdist.png)
+![image](Graphs/policesbballconcertdist.png)
 <br>-MannWhitneyU Test Result (Fire Service): pvalue = 0.078 -> Not Significant
 <br>-MannWhitneyU Test Result (Police Incidents): pvalue = 0.16 -> Not Significant
 <br>-T-Test Statistic & Distribution (Fire Service) : pvalue = 0.10 -> Not Significant 

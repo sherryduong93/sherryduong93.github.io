@@ -4,7 +4,7 @@
 * [Projects](#projects)
     * [What Else Did The Chase Stadium Bring to SF?](#what-else-did-the-chase-stadium-bring-to-sf)
     * [How Are Airbnb Prices Determined?](#how-are-airbnb-prices-determined)
-    * [Your Anime Match Maker: An Anime Recommeder System](#your-anime-match-maker-an-anime-recommender-system)
+    * [Your Anime Match Maker: An Anime Recommender System](#your-anime-match-maker-an-anime-recommender-system)
 * [Contact Me](#contact-information)
 
 ---

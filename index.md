@@ -14,7 +14,7 @@ An exploratory data analysis comparing crime incidents and fire department servi
 Analyzed current Airbnb daily listing prices in San Francisco to predict prices of future listings using Linear Regression, Random Forest, and Gradient Boosting. Performed feature engineering and hyper-parameter tuning, eventually achieving a 75% improvement on baseline RMSE of $207, for a final RMSE of $54 on the cross-validated model with Random Forest.
 
 ---
-[Your Anime Match Maker: An Anime Recommender System](/animematcgmaker)
+[Your Anime Match Maker: An Anime Recommender System](/animematchmaker)
 <img src="https://github.com/sherryduong93/Anime_Recommender/raw/master/images/flask_welcome.png"/>
 Created an Anime Recommender system using MyAnimeList's dataset of animes released prior to 2018. Recommender utilizes popularity-based, content-based similarity between anime (calculated with cosine similarity), and matrix factorization collaborative filtering techniques with Spark's ALS model.
 

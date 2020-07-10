@@ -20,7 +20,7 @@ An exploratory data analysis comparing crime incidents and fire department servi
 <img src="https://camo.githubusercontent.com/44e3714a5a3f647026db8008a65ca962d94ee1e1/68747470733a2f2f6d656469612e7465676e612d6d656469612e636f6d2f6173736574732f574e45502f696d616765732f38373364336266372d636137372d346437342d383234362d3133343830353762663563392f38373364336266372d636137372d346437342d383234362d3133343830353762663563395f3139323078313038302e6a7067"/>
 Analyzed current Airbnb daily listing prices in San Francisco to predict prices of future listings using Linear Regression, Random Forest, and Gradient Boosting. Performed feature engineering and hyper-parameter tuning, eventually achieving a 75% improvement on baseline RMSE of $207, for a final RMSE of $54 on the cross-validated model with Random Forest.
 
-[Github Repo](https://github.com/sherryduong93/Predict_AirBnB_Listings) | [PPT](pdf/Airbnb_PPT.pdf)     |   [Video Presentation](https://www.youtube.com/watch?v=ne7t15Zso4Y&t=2s)
+[Github Repo](https://github.com/sherryduong93/Predict_AirBnB_Listings) | [PPT](pdf/Airbnb_PPT.pdf) | [Video Presentation](https://www.youtube.com/watch?v=ne7t15Zso4Y&t=2s)
 
 ---
 ### [Your Anime Match Maker: An Anime Recommender System](/animematchmaker)
@@ -29,7 +29,7 @@ Created an Anime Recommender system using MyAnimeList's dataset of animes releas
 
 [Check out the Web App!](https://animerecz.herokuapp.com/) (It takes a second to load)
 
-[Github Repo](https://github.com/sherryduong93/Anime_Recommender) | [PPT](pdf/Anime_pdf.pdf)     |   [Video Presentation](https://www.youtube.com/watch?v=XqmXutqqiNI&feature=youtu.be)     
+[Github Repo](https://github.com/sherryduong93/Anime_Recommender) | [PPT](pdf/Anime_pdf.pdf) | [Video Presentation](https://www.youtube.com/watch?v=XqmXutqqiNI&feature=youtu.be)     
 
 ---
 

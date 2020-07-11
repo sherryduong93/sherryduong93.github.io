@@ -3,10 +3,10 @@ logo: "/images/photo.jpg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   Curiously exploring the world with Python and SQL. 
   <br><br>
-  I'm Sherry, and I am a Data Scientist with a background in business operations. I’ve always enjoyed streamlining processes in everything that I do. 
-  I have an insatiable sense of curiosity- and I use Data Science to answer my many questions. 
-  <br><br>
-  <a href="https://www.linkedin.com/in/sherry-duong/">View My LinkedIn Profile</a> 
+  <b>Contact Information</b>
+  <a href="sherryduong@gmail.com">Email</a>: sherryduong@gmail.com
+  <a href="https://www.linkedin.com/in/sherry-duong/">LinkedIn</a>: sherry-duong
+  <a href="https://www.github.com/sherryduong93">Github</a>: sherryduong93 
   
 theme: jekyll-theme-minimal
 google_analytics: UA-56942183-1 # your Google Analytics tracking ID here

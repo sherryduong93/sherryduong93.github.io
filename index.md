@@ -1,15 +1,23 @@
-# Welcome to my portfolio
-<!-- ![image](images/flask_welcome.png) -->
+# Welcome!
 ## Contents
-* [Projects](#projects)
+* [About Me](#about-me)
+* [Projects](#personal-projects)
     * [What Else Did The Chase Stadium Bring to SF?](#what-else-did-the-chase-stadium-bring-to-sf)
     * [How Are Airbnb Prices Determined?](#how-are-airbnb-prices-determined)
     * [Your Anime Match Maker: An Anime Recommender System](#your-anime-match-maker-an-anime-recommender-system)
-* [Contact Me](#contact-information)
+* [Case Studies](#case-studies)
 
 ---
 
-## Projects
+## About Me
+
+I'm Sherry, and I am a Data Scientist with a background in business operations. 
+<br>I have an insatiable sense of curiosity- and I use Data Science to answer my many questions: Did the opening of the Chase Stadium bring more crime and mayhem to my beloved Dogpatch neighborhood in San Francisco? Let's find out with some hypothesis testing!
+<br>I’ve always enjoyed streamlining processes, and have experimented with machine learning to do so: I created an Anime Recommender System to make finding my next anime faster. 
+
+---
+
+## Personal Projects
 
 ### [What Else Did The Chase Stadium Bring to SF?](/chase_center_impact)
 <img src="https://camo.githubusercontent.com/4285e057a79646b9639752fe67a8f8e4d3549285/68747470733a2f2f692e696e73696465722e636f6d2f3563396366386366656535326566336265333739313330333f77696474683d3131303026666f726d61743d6a706567"/>
@@ -39,11 +47,6 @@ Created an Anime Recommender system using MyAnimeList's dataset of animes releas
 <br>[Video Presentation](https://www.youtube.com/watch?v=XqmXutqqiNI&feature=youtu.be)     
 
 ---
-## Contact Information
-**Email:** sherryduong@gmail.com
-<br>**LinkedIn:** sherry-duong
-<br>**Github:** sherryduong93
 
-
-
----
+## Case Studies
+** COMING SOON **

@@ -28,7 +28,7 @@ An exploratory data analysis comparing crime incidents and fire department servi
 <b>Technologies Used: Numpy, Pandas, Scipy, Matplotlib</b>
 
 [Github Repo](https://github.com/sherryduong93/chasestadiumimpact)
-<br>[PPT](pdf/Chase_Center_Presentation.pdf)
+<br>[PPT](/pdf/Chase_Center_Presentation.pdf)
 
 ---
 ### [How Are Airbnb Listing Prices Determined?](/predict_airbnb)
@@ -37,7 +37,7 @@ Analyzed current Airbnb daily listing prices in San Francisco to predict prices 
 <br><b>Technologies Used: Numpy, Pandas, Matplotlib, Seaborn, Sklearn, NLTK</b>
 
 [Github Repo](https://github.com/sherryduong93/Predict_AirBnB_Listings)
-<br>[PPT](pdf/Airbnb_PPT.pdf)
+<br>[PPT](/pdf/Airbnb_PPT.pdf)
 <br>[Video Presentation](https://www.youtube.com/watch?v=ne7t15Zso4Y&t=2s)
 
 ---
@@ -49,15 +49,15 @@ Created an Anime Recommender system using MyAnimeList's dataset of animes releas
 [Check out the Web App!](https://animerecz.herokuapp.com/) (It takes a second to load)
 
 [Github Repo](https://github.com/sherryduong93/Anime_Recommender)
-<br>[PPT](pdf/Anime_pdf.pdf)
+<br>[PPT](/pdf/Anime_pdf.pdf)
 <br>[Video Presentation](https://www.youtube.com/watch?v=XqmXutqqiNI&feature=youtu.be)     
 
 ---
 ## Case Studies
-### [Classifying Fraud](pdf/Fraud_Classification.pdf)
+### [Classifying Fraud](/pdf/Fraud_Classification.pdf)
 
-### [Sentiment Classification](pdf/Sentiment_Classification.pdf)
+### [Sentiment Classification](/pdf/Sentiment_Classification.pdf)
 
-### [Preventing Churn](pdf/Preventing_Churn_Case_Study.pdf)
+### [Preventing Churn](/pdf/Preventing_Churn_Case_Study.pdf)
 
 

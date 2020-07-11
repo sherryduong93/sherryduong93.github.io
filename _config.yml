@@ -3,10 +3,10 @@ logo: "/images/photo.jpg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   Curiously exploring the world with Python and SQL. 
   <br><br>
-  <b>Contact Information</b>
   <br><a href="sherryduong@gmail.com">Email</a>: sherryduong@gmail.com
   <br><a href="https://www.linkedin.com/in/sherry-duong/">LinkedIn</a>: sherry-duong
-  <br><a href="https://www.github.com/sherryduong93">Github</a>: sherryduong93 
+  <br><a href="https://www.github.com/sherryduong93">Github</a>: sherryduong93
+  <br><a href="pdf/SHERRY_DUONG_RESUME.pdf">View Myy Resume</a> 
   
 theme: jekyll-theme-minimal
 google_analytics: UA-56942183-1 # your Google Analytics tracking ID here

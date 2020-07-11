@@ -1,35 +1,40 @@
 # Welcome!
 ## Contents
 * [About Me](#about-me)
-* [Projects](#personal-projects)
+* [Projects](#projects)
     * [What Else Did The Chase Stadium Bring to SF?](#what-else-did-the-chase-stadium-bring-to-sf)
     * [How Are Airbnb Prices Determined?](#how-are-airbnb-prices-determined)
     * [Your Anime Match Maker: An Anime Recommender System](#your-anime-match-maker-an-anime-recommender-system)
 * [Case Studies](#case-studies)
+    * [Classifying Fraud](#classifying-fraud)
+    * [Sentiment Classification](#sentiment-classification)
+    * [Preventing Churn](#preventing-churn)
 
 ---
 
 ## About Me
 
-I'm Sherry, and I am a Data Scientist with a background in business operations. 
-<br>I have an insatiable sense of curiosity- and I use Data Science to answer my many questions: Did the opening of the Chase Stadium bring more crime and mayhem to my beloved Dogpatch neighborhood in San Francisco? Let's find out with some hypothesis testing!
-<br>I’ve always enjoyed streamlining processes, and have experimented with machine learning to do so: I created an Anime Recommender System to make finding my next anime faster. 
+<b>I'm Sherry. I am a Data Scientist with a background in business operations in the consumer goods industry.</b>
+<br>I have an insatiable sense of curiosity and I use Data Science to answer my many questions: Did the opening of the Chase Stadium bring more crime and mayhem to my beloved Dogpatch neighborhood in San Francisco? Let's find out with some hypothesis testing!
+<br>I’ve always enjoyed streamlining processes, and have experimented with machine learning to do so: I created an Anime Recommender System to make finding my next anime faster. The application had over 4500 impressions within one week of posting on LinkedIn. Check out the WebApp to find your next anime!
 
 ---
 
-## Personal Projects
+## Projects
 
 ### [What Else Did The Chase Stadium Bring to SF?](/chase_center_impact)
 <img src="https://camo.githubusercontent.com/4285e057a79646b9639752fe67a8f8e4d3549285/68747470733a2f2f692e696e73696465722e636f6d2f3563396366386366656535326566336265333739313330333f77696474683d3131303026666f726d61743d6a706567"/>
-An exploratory data analysis comparing crime incidents and fire department service call volume in the Dogpatch and Mission Bay neighborhoods in San Francisco. Used Welch's T-Test and Mann Whitney U Test to confirm statistical significance between crime/fire during dates with events at the Chase Center versus not.
+An exploratory data analysis comparing crime incidents and fire department service call volume in the Dogpatch and Mission Bay neighborhoods in San Francisco. Used Welch's T-Test and Mann Whitney U Test to confirm statistical significance between crime/fire during dates with events at the Chase Center versus not. <br>
+<b>Technologies Used: Numpy, Pandas, Scipy, Matplotlib</b>
 
 [Github Repo](https://github.com/sherryduong93/chasestadiumimpact)
 <br>[PPT](pdf/Chase_Center_Presentation.pdf)
 
 ---
-### [How Are Airbnb Prices Determined?](/predict_airbnb)
+### [How Are Airbnb Listing Prices Determined?](/predict_airbnb)
 <img src="https://camo.githubusercontent.com/44e3714a5a3f647026db8008a65ca962d94ee1e1/68747470733a2f2f6d656469612e7465676e612d6d656469612e636f6d2f6173736574732f574e45502f696d616765732f38373364336266372d636137372d346437342d383234362d3133343830353762663563392f38373364336266372d636137372d346437342d383234362d3133343830353762663563395f3139323078313038302e6a7067"/>
 Analyzed current Airbnb daily listing prices in San Francisco to predict prices of future listings using Linear Regression, Random Forest, and Gradient Boosting. Performed feature engineering and hyper-parameter tuning, eventually achieving a 75% improvement on baseline RMSE of $207, for a final RMSE of $54 on the cross-validated model with Random Forest.
+<br><b>Technologies Used: Numpy, Pandas, Matplotlib, Seaborn, Sklearn, NLTK</b>
 
 [Github Repo](https://github.com/sherryduong93/Predict_AirBnB_Listings)
 <br>[PPT](pdf/Airbnb_PPT.pdf)
@@ -39,6 +44,7 @@ Analyzed current Airbnb daily listing prices in San Francisco to predict prices 
 ### [Your Anime Match Maker: An Anime Recommender System](/animematchmaker)
 <img src="https://github.com/sherryduong93/Anime_Recommender/raw/master/images/flask_welcome.png"/>
 Created an Anime Recommender system using MyAnimeList's dataset of animes released prior to 2018. Recommender utilizes popularity-based, content-based similarity between anime (calculated with cosine similarity), and matrix factorization collaborative filtering techniques with Spark's ALS model.
+<br><b>Technologies Used:  Numpy, Pandas, Matplotlib, Sklearn, Spark ML, AWS Sagemaker</b>
 
 [Check out the Web App!](https://animerecz.herokuapp.com/) (It takes a second to load)
 
@@ -47,6 +53,11 @@ Created an Anime Recommender system using MyAnimeList's dataset of animes releas
 <br>[Video Presentation](https://www.youtube.com/watch?v=XqmXutqqiNI&feature=youtu.be)     
 
 ---
-
 ## Case Studies
-** COMING SOON **
+### [Classifying Fraud](pdf/Fraud_Classification.pdf)
+
+### [Sentiment Classification](pdf/Sentiment_Classification.pdf)
+
+### [Preventing Churn](pdf/Preventing_Churn_Case_Study.pdf)
+
+

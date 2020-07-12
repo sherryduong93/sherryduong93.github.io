@@ -55,9 +55,15 @@ Created an Anime Recommender system using MyAnimeList's dataset of animes releas
 ---
 ## Case Studies
 ### [Classifying Fraud](/pdf/Fraud_Classification.pdf)
+Maximized profit for a ticket sales and distribution company by identifying fraudulent users and posts using Logistic Regression, Random Forest, Gradient Boosting, MLP Classifier, and XGBoost. Eventually achieving an AUC of 99.4%.
+<br><b>Technologies Used:  Numpy, Pandas, Matplotlib, Seaborn, Sklearn, Github</b>
 
 ### [Sentiment Classification](/pdf/Sentiment_Classification.pdf)
+Classified Sentiments of movie reviews using Text Classification techniques: Stopword removal, Stemming, Clustering, Topic Modeling, and Machine Learning Models: Naive Bayes, Logistic Regression, Random Forest, and Gradient Boosting. Eventually achieving an accuracy of 88%.
+<br><b>Technologies Used:  Numpy, Pandas, Matplotlib, Seaborn, Sklearn, NLTK, Github</b>
 
 ### [Preventing Churn](/pdf/Preventing_Churn_Case_Study.pdf)
+Using classification to identify potential customers with potential to churn. Utilized Logistic Regresssion, Random Forest, and Gradient Boosting, eventually achieving an accuracy of 78%.
+<br><b>Technologies Used:  Numpy, Pandas, Matplotlib, Sklearn, Github</b>
 
 

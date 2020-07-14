@@ -49,7 +49,7 @@ Created an Anime Recommender system using MyAnimeList's dataset of animes releas
 [Check out the Web App!](https://animerecz.herokuapp.com/) (It takes a second to load)
 
 [Github Repo](https://github.com/sherryduong93/Anime_Recommender)
-<br>[PPT](/pdf/Anime_pdf.pdf)
+<br>[PPT](/pdf/Anime_PPT.pdf)
 <br>[Video Presentation](https://www.youtube.com/watch?v=XqmXutqqiNI&feature=youtu.be)     
 
 ---
